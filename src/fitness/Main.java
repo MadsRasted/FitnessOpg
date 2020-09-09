@@ -17,7 +17,7 @@ public class Main {
         List<Member> members = new ArrayList<Member>();
 
         //Employee liste
-        System.out.println("FITNESS EMPLOYEES\nName     Cpr            Hours    Salary      Vacation");
+        System.out.printf("FITNESS EMPOLYEES" + "\n" + "%-10s %-10s %-10s %-10s %-10s"," Name","CPR","Hours","Salary","Vacation" + "\n" + "********************************************* "+ "\n");
         emps.add(ad.createAdmin("Mads", 1008981717));
         emps.add(ad.createAdmin("Nick", 1237498988));
         emps.add(ins.createInstructor("Emil", 18981098, 14));
@@ -30,10 +30,15 @@ public class Main {
         //Member liste
         members.add(basic.createBasicM("Nick", 1511931313));
         members.add(full.createFullM("Mads", 1008981838));
-        System.out.println("FITNESS MEMBERS\nName    Cpr           Membertype  Fee");
+        System.out.printf("FITNESS Members" + "\n" + "%-10s %-10s %-10s %-10s"," Name","CPR","MemberType","Fee"+ "\n" + "********************************************* "+ "\n");
         for (Member objects : members) {
             System.out.println(objects);
         }
+
+        System.out.println("");
+
+        //Fuld liste
+        System.out.println();
     }
 }
 

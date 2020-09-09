@@ -22,7 +22,7 @@ public class FullMember extends Member {
 
     @Override
     public String toString() {
-        return name + "    " + cpr + "    " + memberType + "        " + fee;
+        return String.format("%-10s %-10s %-10s %-10s", name, cpr, memberType, fee);
     }
 
 }

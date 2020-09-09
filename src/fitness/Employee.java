@@ -24,7 +24,7 @@ public class Employee {
     //Methods
     @Override
     public String toString() {
-        return name + "     " + cpr + "     " + hours + "     " + salary + "     " + vacation;
+        return String.format("%-10s %-10s %-10s %-10s%-10s", name, cpr, hours, salary, vacation);
     }
 
     public Employee printEmployee(Employee employee){
