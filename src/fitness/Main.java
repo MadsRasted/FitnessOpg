@@ -20,7 +20,7 @@ public class Main {
         System.out.printf("FITNESS EMPOLYEES" + "\n" + "%-10s %-10s %-10s %-10s %-10s"," Name","CPR","Hours","Salary","Vacation" + "\n" + "********************************************* "+ "\n");
         emps.add(ad.createAdmin("Mads", 1008981717));
         emps.add(ad.createAdmin("Nick", 1237498988));
-        emps.add(ins.createInstructor("Emil", 18981098, 14));
+        emps.add(ins.createInstructor("Jonas", 18981098, 14));
         for (Employee object : emps) {
             System.out.println(object);
         }
